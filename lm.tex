@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+
+\usepackage{kantlipsum}   %% only for demo
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{John}
+\def\familyname{Doe}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries John Doe}\\[.35ex]
+\small\itshape%
+street and number\\
+postcode city\\[.35ex]
+\Telefon~phone number\\
+\Letter~\href{mailto:jdoe@gmail.com}{jdoe@gmail.com}
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries Company XYZ}\\[.35ex]
+\small\itshape%
+street and number\\
+postcode city
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+\raggedright
+Dear Sir or Madam:\\[1.5em]
+%
+Monsieur,
+
+Actuellement à la recherche de nouvelles opportunités, j'ai eu connaissance du poste XXX via le site indeed.fr.
+Je suis actuellement salarié de l'entreprise K-Epsilon à Sophia-Antipolis, où j'exerce la fonction d'Ingénieur de Recherche en Hydrodynamique.
+
+A ce titre, je suis en charge de gérer des projets de R\&D, de modélisation et de développement-logiciel, ainsi que des prestations industrielles en interaction forte avec le client. 
+
+Au cours des dernières années, j'ai ainsi pu réaliser des études en interaction fluide-structure, notamment sur les phénomènes de Vibration induite par vortex (VIV), qui m'ont notamment permis d'établir un protocole de comparaison entre des simulations numériques en interaction fluide-structure et des campagnes expérimentales menées en bassin d'essai. Les couplages que j'ai été amené à maîtriser m'ont conduit à également étudier des structures très légères,caractérisées par couplages très forts comme les voiles de course, kites, parachutes ou encore ballons dirigeables.
+
+Mon activité m'a amené à développer une très forte autonomie en développement et en modélisation, puisque j'ai été amené à réaliser des calculs de CFD complexes à travers des solutions industrielles, mais aussi à travers des outils créés au sein de la société.
+
+J'ai ainsi été amené à développer un bassin d'essais numériques, et des solutions d'optimisation pour des hydroliennes ou des propulseurs marins. 
+
+J'ai également été amené à industrialiser le logiciel d'interaction fluide-structure de la société, en vue de sa commercialisation. Cette solution fait intervenir des modélisations variées, allant des éléments finis (pour la structure) aux volumes finis ou aux méthodes potentielles (pour la partie fluide).
+
+Préliminairement à cette expérience, j'avais réalisé à Marseille un cursus d'Ingénieur en Mécanique Energétique, suivi d'une thèse de Doctorat en Mécanique des Fluides. Au cours de cette thèse DGA j'ai développé un solveur multidomaine des Equations de Navier-Stokes en rotation par méthodes spectrales.
+
+Je cherche aujourd'hui à recentrer mon activité professionnelle sur des domaines beaucoup plus techniques et plus axés sur le développement et la modélisation. En effet, et à mon grand regret, les activités inhérentes à mon statut de responsable de projets au sein d'une TPE ne m'en laissent plus suffisamment le loisir. 
+
+D'autre part, étant passionné de physique au sens général, je cherche maintenant à me diversifier, et l'acoustique marine me semble être parfaitement dans la continuité de mon activité actuelle.
+
+%Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries John Doe}\\
+%
+
+PS : C'est 50 000 brut annuel, bitch
+\vfill%
+{\slshape Enclosure}
+{\slshape Attachment: curriculum vit\ae{}}
+\end{document}
